@@ -27,14 +27,22 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, Category="Measure Event", meta=(DisplayName = "Spawn Marker"))
 	void StartSpawnMarkerEvent(const FVector& SpawnLocation);
 	
-	UFUNCTION(BlueprintCallable, Category="Measure")
-	void StartPoint(FVector Location);
+	// UFUNCTION()
+	// void StartPoint(FVector Location);
 
+	UFUNCTION()
+	void HandleMeasurePoint(FVector ClickLocation);
+	
 	void CancelMeasurement();
 
 
 private:
 	FVector StartPointLocation;
+	FVector EndPointLocation;
+	bool bIsStartPointSet = false;
+
+	FVector FixedLocationZ(const FVector& Location);
+	float MeasureDistance(const FVector& Start, const FVector& End);
 
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> MeasureMarkerBPClass;

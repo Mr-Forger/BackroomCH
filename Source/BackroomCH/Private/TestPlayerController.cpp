@@ -58,7 +58,7 @@ void ATestPlayerController::MeasureClick()
 		if (MeasureComponent != nullptr)
 		{
 			UE_LOG(LogTemp, Display, TEXT("MeasureComponent를 찾았습니다.(%s) / 전송 좌표는 (%s) 입니다"), *MeasureComponent->GetName(), *HitResult.Location.ToString());
-			MeasureComponent->StartPoint(HitResult.Location);
+			MeasureComponent->HandleMeasurePoint(HitResult.Location);
 		}
 		else
 		{
