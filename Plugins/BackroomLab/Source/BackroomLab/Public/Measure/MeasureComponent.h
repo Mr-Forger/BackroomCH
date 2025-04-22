@@ -20,31 +20,38 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-public:	
+public:
+	UFUNCTION(BlueprintCallable, Category="Measure")
+	void ResetMeasureState();
+
+	UFUNCTION(BlueprintCallable, Category="Measure")
+	void ClearLastSpawnMarker();
+
+	UFUNCTION(BlueprintCallable, Category="Measure")
+	void ClearAllMarker();
+	
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Measure State")
+	bool bIsStartPointSet = false;
+	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 	UFUNCTION(BlueprintImplementableEvent, Category="Measure Event", meta=(DisplayName = "Spawn Marker"))
 	void StartSpawnMarkerEvent(const FVector& SpawnLocation);
-	
-	// UFUNCTION()
-	// void StartPoint(FVector Location);
 
 	UFUNCTION()
 	void HandleMeasurePoint(FVector ClickLocation);
-	
-	void CancelMeasurement();
 
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<AActor> MeasureMarkerBPClass;
 
 private:
 	FVector StartPointLocation;
 	FVector EndPointLocation;
-	bool bIsStartPointSet = false;
 
 	FVector FixedLocationZ(const FVector& Location);
 	float MeasureDistance(const FVector& Start, const FVector& End);
 
-	UPROPERTY(EditAnywhere)
-	TSubclassOf<AActor> MeasureMarkerBPClass;
 		
 };

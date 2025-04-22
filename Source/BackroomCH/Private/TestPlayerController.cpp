@@ -3,6 +3,7 @@
 
 #include "TestPlayerController.h"
 #include "GameFramework/SpectatorPawn.h"
+#include "Kismet/GameplayStatics.h"
 #include "Measure/MeasureComponent.h"
 
 ATestPlayerController::ATestPlayerController()
@@ -17,6 +18,7 @@ void ATestPlayerController::SetupInputComponent()
 	InputComponent->BindAxis("Turn", this, &ATestPlayerController::Turn);
 	InputComponent->BindAction("MeasureClick", IE_Pressed, this, &ATestPlayerController::MeasureClick);
 	InputComponent->BindAction("MeasureCancelClick", IE_Pressed, this, &ATestPlayerController::MeasureCancelClick);
+	InputComponent->BindAction("ClearAllMarkerByClick", IE_Pressed, this, &ATestPlayerController::ClearAllMarkerByClick);
 }
 
 void ATestPlayerController::LookUp(float Value)
@@ -69,7 +71,6 @@ void ATestPlayerController::MeasureClick()
 
 void ATestPlayerController::MeasureCancelClick()
 {
-	UE_LOG(LogTemp, Warning, TEXT("측정 취소 실행"));
 	bIsMeasureMode = false;
 
 	APawn* MyPawn = GetPawn();
@@ -78,8 +79,16 @@ void ATestPlayerController::MeasureCancelClick()
 		UMeasureComponent* MeasureComponent = MyPawn->FindComponentByClass<UMeasureComponent>();
 		if (MeasureComponent != nullptr)
 		{
-			UE_LOG(LogTemp, Warning, TEXT("측정을 취소합니다."));
-			MeasureComponent->CancelMeasurement();
+			MeasureComponent->ClearLastSpawnMarker();
 		}
 	}
+}
+
+void ATestPlayerController::ClearAllMarkerByClick()
+{
+	UE_LOG(LogTemp, Warning, TEXT("마커 삭제를 시작합니다."));
+	UMeasureComponent* MeasureComponent = GetPawn()->FindComponentByClass<UMeasureComponent>();
+	MeasureComponent->ClearAllMarker();
+	
+	
 }

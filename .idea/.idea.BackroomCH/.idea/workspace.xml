@@ -13,10 +13,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b5f2214-8408-4357-a532-39e6da351bc5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Plugins/BackroomLab/Config/DefaultBackroomLab.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BackroomCH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BackroomCH/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprint/BP_MeasureComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprint/BP_MeasureComponent.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprint/BP_MeasureMarker.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprint/BP_MeasureMarker.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/BackroomLab/Source/BackroomLab/Private/Measure/MeasureComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/BackroomLab/Source/BackroomLab/Private/Measure/MeasureComponent.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/BackroomLab/Source/BackroomLab/Public/Measure/MeasureComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/BackroomLab/Source/BackroomLab/Public/Measure/MeasureComponent.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/BackroomCH/Private/TestPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BackroomCH/Private/TestPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/BackroomCH/Public/TestPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BackroomCH/Public/TestPlayerController.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +36,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://4" root0="FORCE_HIGHLIGHTING" />
+    <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -182,7 +188,9 @@
       <workItem from="1744940037391" duration="88000" />
       <workItem from="1744954177023" duration="965000" />
       <workItem from="1744955545126" duration="9933000" />
-      <workItem from="1745191080087" duration="12903000" />
+      <workItem from="1745191080087" duration="25266000" />
+      <workItem from="1745279369006" duration="4066000" />
+      <workItem from="1745283504111" duration="9921000" />
     </task>
     <servers />
   </component>

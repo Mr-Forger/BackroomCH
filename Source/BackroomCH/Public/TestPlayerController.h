@@ -23,8 +23,6 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Measure")
 	bool bIsMeasureMode = true;
 
-	
-
 protected:
 
 private:
@@ -33,6 +31,8 @@ private:
 	
 	void MeasureClick();
 	void MeasureCancelClick();
+
+	void ClearAllMarkerByClick();
 
 	UPROPERTY(EditAnywhere)
 	float RotationRate = 20;
