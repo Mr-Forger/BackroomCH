@@ -43,24 +43,16 @@ void ATestPlayerController::MeasureClick()
 		return;
 	}
 	
-	UE_LOG(LogTemp, Warning, TEXT("측정 모드 입니다"));
-
-	FHitResult HitResult;
-
-	bool bHitSuccess = GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, true, HitResult);
-	if (bHitSuccess)
-	{
-		UE_LOG(LogTemp, Display, TEXT("라인 트레이스 성공! 위치는: %s"), *HitResult.Location.ToString());
-	}
-
+	UE_LOG(LogTemp, Warning, TEXT("측정 모드 입니다"))
+	
 	APawn* MyPawn = GetPawn(); // 조종 중인 폰 찾기
 	if (MyPawn != nullptr) // 폰이 널포인터가 아니면 = 폰이 있으면
 	{
 		UMeasureComponent* MeasureComponent = MyPawn->FindComponentByClass<UMeasureComponent>();
 		if (MeasureComponent != nullptr)
 		{
-			UE_LOG(LogTemp, Display, TEXT("MeasureComponent를 찾았습니다.(%s) / 전송 좌표는 (%s) 입니다"), *MeasureComponent->GetName(), *HitResult.Location.ToString());
-			MeasureComponent->HandleMeasurePoint(HitResult.Location);
+			UE_LOG(LogTemp, Display, TEXT("MeasureComponent를 찾았습니다.(%s)"), *MeasureComponent->GetName());
+			MeasureComponent->StartLineTrace();
 		}
 		else
 		{

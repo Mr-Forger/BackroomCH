@@ -13,16 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b5f2214-8408-4357-a532-39e6da351bc5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Plugins/BackroomLab/Config/DefaultBackroomLab.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BackroomCH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BackroomCH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprint/BP_MeasureComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprint/BP_MeasureComponent.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprint/BP_MeasureMarker.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprint/BP_MeasureMarker.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprint/BP_Test.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Test.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Test.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/BackroomLab/Source/BackroomLab/Private/Measure/MeasureComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/BackroomLab/Source/BackroomLab/Private/Measure/MeasureComponent.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/BackroomLab/Source/BackroomLab/Public/Measure/MeasureComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/BackroomLab/Source/BackroomLab/Public/Measure/MeasureComponent.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/BackroomCH/Private/TestPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BackroomCH/Private/TestPlayerController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/BackroomCH/Public/TestPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BackroomCH/Public/TestPlayerController.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +34,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -63,7 +60,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="C/C++ Project.BackroomCH">
+  <component name="RunManager" selected=".NET 실행 설정 프로파일.EpicGames.AspNet">
     <configuration name="BackroomCH" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">
         <option name="CONFIGURATION" value="Development_Editor" />
@@ -153,6 +150,13 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="EpicGames.Perforce.Fixture/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -160,13 +164,6 @@
           <option name="contextFolderPath" value="D:\Unreal Projects\Side_Project\BackroomCH" />
           <option name="sourceFilePath" value="C:/Program Files/Epic Games/UE_5.5/Engine/Source/Programs/Shared/EpicGames.Perforce.Fixture/Dockerfile" />
         </settings>
-      </deployment>
-      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile">
-        <settings />
       </deployment>
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
@@ -190,13 +187,16 @@
       <workItem from="1744955545126" duration="9933000" />
       <workItem from="1745191080087" duration="25266000" />
       <workItem from="1745279369006" duration="4066000" />
-      <workItem from="1745283504111" duration="9921000" />
+      <workItem from="1745283504111" duration="17224000" />
+      <workItem from="1745365032950" duration="1942000" />
+      <workItem from="1745367176167" duration="10661000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

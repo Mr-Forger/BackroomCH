@@ -21,6 +21,9 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
+	UFUNCTION(BlueprintCallable, Category="Measurue")
+	void StartLineTrace();
+	
 	UFUNCTION(BlueprintCallable, Category="Measure")
 	void ResetMeasureState();
 

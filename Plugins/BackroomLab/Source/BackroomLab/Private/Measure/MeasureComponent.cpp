@@ -4,13 +4,15 @@
 #include "Measure/MeasureComponent.h"
 
 #include "Kismet/GameplayStatics.h"
-
 // Sets default values for this component's properties
 UMeasureComponent::UMeasureComponent()
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
+	
+	StartPointLocation = FVector::ZeroVector;
+	EndPointLocation = FVector::ZeroVector;
 
 	// ...
 }
@@ -23,6 +25,33 @@ void UMeasureComponent::BeginPlay()
 
 	// ...
 	
+}
+
+void UMeasureComponent::StartLineTrace()
+{
+	UE_LOG(LogTemp, Warning, TEXT("라인 트레이스"));
+	APawn* OwnerPawn = Cast<APawn>(GetOwner());
+	if (!IsValid(OwnerPawn))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("소유 중인 폰을 찾을 수 없습니다"));
+		return;
+	}
+
+	APlayerController* PlayerController = Cast<APlayerController>(OwnerPawn->GetController());
+	if (!IsValid(PlayerController)) return;
+	
+	FHitResult HitResult;
+
+	bool bHitSuccess = PlayerController->GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, true, HitResult);
+	if (bHitSuccess)
+	{
+		UE_LOG(LogTemp, Display, TEXT("라인 트레이스 성공! 위치는: %s"), *HitResult.Location.ToString());
+		HandleMeasurePoint(HitResult.Location);
+	}
+	else
+	{
+			UE_LOG(LogTemp, Warning, TEXT("라인 트레이스 실패"));
+	}
 }
 
 //가장 마지막에 찍은 마커 제거 후 좌표 초기화
@@ -135,3 +164,8 @@ float UMeasureComponent::MeasureDistance(const FVector& Start, const FVector& En
 	return Distance;
 }
 
+/** 응가
+{
+	int poop =  this is dirty thing what come out from JaeMin Choi asshole in Every day.
+}
+*/ 
