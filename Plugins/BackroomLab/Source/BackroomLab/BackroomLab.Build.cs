@@ -38,6 +38,8 @@ public class BackroomLab : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
+				"UMG",
+				"BackroomCH"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

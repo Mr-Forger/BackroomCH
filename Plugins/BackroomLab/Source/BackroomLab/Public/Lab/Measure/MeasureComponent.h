@@ -50,6 +50,7 @@ public:
 	TSubclassOf<AActor> MeasureMarkerBPClass;
 
 private:
+	
 	FVector StartPointLocation;
 	FVector EndPointLocation;
 

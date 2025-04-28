@@ -23,13 +23,13 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Measure")
 	bool bIsMeasureMode = true;
 
+	void MeasureClick();
 protected:
 
 private:
 	void LookUp(float Value);
 	void Turn(float Value);
 	
-	void MeasureClick();
 	void MeasureCancelClick();
 
 	void ClearAllMarkerByClick();

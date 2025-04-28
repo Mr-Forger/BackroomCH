@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "BackroomLab.h"
+#include "BackroomLabModule.h"
 
 #define LOCTEXT_NAMESPACE "FBackroomLabModule"
 
