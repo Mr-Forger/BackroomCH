@@ -8,7 +8,7 @@ public class BackroomCH : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "BackroomLab" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "BackroomLab", "BackroomStreaming" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
