@@ -25,7 +25,7 @@ public class BackroomStreaming : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Core", "PixelStreaming2"
+				"Core", "PixelStreaming", "PixelStreaming2"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -40,7 +40,9 @@ public class BackroomStreaming : ModuleRules
 				"SlateCore",
 				"Json",
 				"JsonUtilities",
-				"InputCore"
+				"InputCore",
+				"PixelStreamingInput",
+				"PixelStreaming2Input"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

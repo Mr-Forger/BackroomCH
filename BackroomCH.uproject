@@ -21,9 +21,16 @@
 				"Editor"
 			]
 		},
-		
 		{
-			"Name": "PixelStreaming2",
+			"Name": "BackroomStreaming",
+			"Enabled": false
+		},
+		{
+			"Name": "PixelStreaming",
+			"Enabled": true
+		},
+		{
+			"Name": "PixelStreamingPlayer",
 			"Enabled": true
 		}
 	]

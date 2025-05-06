@@ -15,8 +15,9 @@
     <list default="true" id="8b5f2214-8408-4357-a532-39e6da351bc5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BackroomCH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BackroomCH/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackroomCH.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/BackroomCH.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprint/BP_StreamingManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprint/BP_StreamingManager.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Test.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Test.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/BackroomCH/BackroomCH.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BackroomCH/BackroomCH.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/BackroomStreaming/Source/BackroomStreaming/BackroomStreaming.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/BackroomStreaming/Source/BackroomStreaming/BackroomStreaming.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +35,11 @@
     <setting file="file://C:/Perforce/CH2401/Plugins/RYUInterior/Source/RYUInterior/Private/Interior/Action/RYUInteriorActionManager.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Perforce/CH2401/Plugins/RYUInterior/Source/RYUInterior/Public/Interior/RYUInteriorManager.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_5.5/Engine/Plugins/Media/PixelStreaming/Source/PixelStreaming/Private/PixelStreamingVideoInputI420.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://C:/Program Files/Epic Games/UE_5.5/Engine/Plugins/Media/PixelStreaming/Source/PixelStreaming/Public/PixelStreamingInputComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Epic Games/UE_5.5/Engine/Plugins/Media/PixelStreaming/Source/PixelStreaming/Public/PixelStreamingInputComponent.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_5.5/Engine/Plugins/Media/PixelStreaming2/Intermediate/Build/Win64/UnrealEditor/Inc/PixelStreaming2/UHT/PixelStreaming2InputComponent.generated.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_5.5/Engine/Plugins/Media/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2InputComponent.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_5.5/Engine/Plugins/Media/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2InputComponent.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Epic Games/UE_5.5/Engine/Plugins/Media/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Plugins/BackroomLab/Source/BackroomLab/Private/Lab/BackroomManager.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Plugins/BackroomLab/Source/BackroomLab/Private/Lab/MeasureManager.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Plugins/BackroomLab/Source/BackroomLab/Public/Lab/BackroomManager.h" root0="FORCE_HIGHLIGHTING" />
@@ -55,26 +57,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET 실행 설정 프로파일.EpicGames.AspNet.executor": "Debug",
-    ".NET 프로젝트.UnrealBuildTool.executor": "Debug",
-    "C/C++ Project.BackroomCH.executor": "Debug",
-    "C/C++ 프로젝트.BackroomCH.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CppUnrealEngineOptionsId",
-    "ts.external.directory.path": "C:\\Users\\Kim\\AppData\\Local\\Programs\\Rider\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET 실행 설정 프로파일.EpicGames.AspNet.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET 프로젝트.UnrealBuildTool.executor&quot;: &quot;Debug&quot;,
+    &quot;C/C++ Project.BackroomCH.executor&quot;: &quot;Debug&quot;,
+    &quot;C/C++ 프로젝트.BackroomCH.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CppUnrealEngineOptionsId&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Kim\\AppData\\Local\\Programs\\Rider\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C/C++ 프로젝트.BackroomCH">
     <configuration name="BackroomCH" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">
@@ -209,6 +211,8 @@
       <workItem from="1745541033514" duration="27348000" />
       <workItem from="1745800710913" duration="7530000" />
       <workItem from="1745887053479" duration="19671000" />
+      <workItem from="1745970208950" duration="8708000" />
+      <workItem from="1746002776037" duration="911000" />
     </task>
     <servers />
   </component>
